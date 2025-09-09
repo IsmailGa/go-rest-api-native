@@ -11,7 +11,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-func Routes() {
+func TodoRoutes() {
 	// попытка загрузить сохранённые задачи (если есть)
 	if err := handlers.LoadTodos(); err != nil {
 		log.Printf("warning: cannot load todos: %v", err)
